@@ -1,0 +1,114 @@
+<style>
+    @font-face {
+        font-family: workSans;
+        src: url(/fonts/WorkSans/WorkSans-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+        font-family: nunitoSans;
+        src: url(/fonts/NunitoSans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf);
+    }
+
+    body {
+        font-family: nunitoSans, sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: workSans, sans-serif;
+        font-weight: normal;
+    }
+
+    .underlined {
+        border-bottom: 3px solid black;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    .recent-post-title a {
+        color: var(--bs-body-color);
+    }
+
+    .navbar {
+        font-family: workSans, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+
+    .navbar .dropdown-menu {
+        background: #343a40;
+        --bs-dropdown-border-radius: 4px;
+        --bs-dropdown-border-color: #474f56;
+    }
+
+    .navbar .dropdown-menu a:hover {
+        background: #474f56;
+        color: var(--bs-nav-link-hover-color);
+    }
+
+    .navbar .dropdown-item {
+        color: var(--bs-nav-link-color);
+    }
+
+    .badge {
+        font-family: workSans, sans-serif;
+        font-weight: 500;
+    }
+
+    .title-image {
+        background-position: left top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: max(100vw, 500px);
+
+        border-bottom: 4px solid black;
+
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: calc(0px - ((100vw - 100%) / 2));
+        width: 100vw;
+        z-index: -9999;
+    }
+
+    .title-image-container {
+        position: relative;
+        padding-top: 50px;
+        margin-top: -50px;
+    }
+
+    #home-title-image {
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+        ), url("/images/TitleImage.jpg");
+    }
+
+    #cyclo-title-image {
+        background-image: url("/images/cyclo-title-image.png");
+    }
+
+    #cyclo-title-image-container {
+        height: 400px;
+    }
+
+    @media(min-width: 768px) {
+        .navbar-brand {
+            margin-left: 20px;
+        }
+
+        .navbar .dropdown-menu {
+            --bs-dropdown-border-color: var(--bs-border-color-translucent);
+        }
+    }
+
+    @media(max-width: 1024px) {
+        #cyclo-title-image-container {
+            height: 220px;
+        }
+    }
+</style>

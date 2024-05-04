@@ -1,471 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html><html lang="en" data-bs-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="author" content="Avery Vine"><meta name="generator" content="Ignite v0.1.0"><title>Home</title><link href="/css/bootstrap.min.css" rel="stylesheet"><link href="/css/prism-default-dark.css" rel="stylesheet"><link href="/css/bootstrap-icons.min.css" rel="stylesheet"><link href="https://www.averyvine.com/" rel="canonical"><meta property="og:site_name" content="Avery Vine"><meta property="og:title" content="Home"><meta property="twitter:title" content="Home"><meta property="og:url" content="https://www.averyvine.com/"><meta name="twitter:domain" content="averyvine.com"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:dnt" content="on"></head><body class="mt-5 pt-5 px-4"><div class="col-sm-10 mx-auto"><div style="max-width: 900px; margin: auto"><style>
+    @font-face {
+        font-family: workSans;
+        src: url(/fonts/WorkSans/WorkSans-VariableFont_wght.ttf);
+    }
 
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124828377-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    @font-face {
+        font-family: nunitoSans;
+        src: url(/fonts/NunitoSans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf);
+    }
 
-        function gtag() {
-            dataLayer.push(arguments);
+    body {
+        font-family: nunitoSans, sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: workSans, sans-serif;
+        font-weight: normal;
+    }
+
+    .underlined {
+        border-bottom: 3px solid black;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    .recent-post-title a {
+        color: var(--bs-body-color);
+    }
+
+    .navbar {
+        font-family: workSans, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+
+    .navbar .dropdown-menu {
+        background: #343a40;
+        --bs-dropdown-border-radius: 4px;
+        --bs-dropdown-border-color: #474f56;
+    }
+
+    .navbar .dropdown-menu a:hover {
+        background: #474f56;
+        color: var(--bs-nav-link-hover-color);
+    }
+
+    .navbar .dropdown-item {
+        color: var(--bs-nav-link-color);
+    }
+
+    .badge {
+        font-family: workSans, sans-serif;
+        font-weight: 500;
+    }
+
+    .title-image {
+        background-position: left top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: max(100vw, 500px);
+
+        border-bottom: 4px solid black;
+
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: calc(0px - ((100vw - 100%) / 2));
+        width: 100vw;
+        z-index: -9999;
+    }
+
+    .title-image-container {
+        position: relative;
+        padding-top: 50px;
+        margin-top: -50px;
+    }
+
+    #home-title-image {
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+        ), url("/images/TitleImage.jpg");
+    }
+
+    #cyclo-title-image {
+        background-image: url("/images/cyclo-title-image.png");
+    }
+
+    #cyclo-title-image-container {
+        height: 400px;
+    }
+
+    @media(min-width: 768px) {
+        .navbar-brand {
+            margin-left: 20px;
         }
-        gtag('js', new Date());
-        gtag('config', 'UA-124828377-1');
-    </script>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Avery Vine</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Work+Sans">
-    <link rel="icon" type="image/png" href="/assets/favicon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@3.3.6/dist/scrollreveal.min.js"></script>
-    <script src="https://unpkg.com/konami@1.6.2/konami.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.6/dist/typeit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/dd6c691d3f.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
-</head>
+        .navbar .dropdown-menu {
+            --bs-dropdown-border-color: var(--bs-border-color-translucent);
+        }
+    }
 
-<body id="top" data-spy="scroll" data-target=".navbar" data-offset="600">
-    <nav class="navbar sticky-top unselectable navbar-expand-md navbar-dark bg-dark">
-        <div id="brand" class="navbar-header">
-            <a class="navbar-brand" href="#top">Avery Vine</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#aboutMe">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#workExperience">Work Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#more-info">More Info</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/blog">
-                        <button type="button" class="btn btn-info">View my Blog!</button>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="loading-donut"></div>
-    <div id="modal-display" class="modal">
-        <span class="close-area"></span>
-        <img class="modal-content" id="modal-content">
-        <div id="modal-caption"></div>
-    </div>
-
-    <div class="progress-container">
-        <div class="progress-bar" id="progress-bar"></div>
-    </div>
-
-    <article id="body-container">
-        <div id="parallax1" class="parallax align-items-center d-flex h100">
-            <div id="header-container" class="container">
-                <div class="row">
-                    <div id="header-image-container" class="col-md-3 figure">
-                        <img id="header-image" src="/assets/minified/avine.jpeg" alt="Avery Vine"
-                            class="img-thumbnail img-fluid content-image">
-                        <figcaption class="figure-caption" style="display: none">Hey 😁 nice to see you!</figcaption>
-                    </div>
-
-                    <div class="col-md">
-                        <div id="header-typeit-container" class="container h-100">
-                            <h3 class="text-center text-sm-left">I am...
-                                <span id="header-typeit"></span>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section id="aboutMe" class="container content-section">
-            <div class="row">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1>About Me</h1>
-                    <p>Hi, my name is Avery! I'm a developer based in Ottawa, Ontario, studying Computer Science (Mobile Development stream) at Carleton University and currently available for hire. I am a focused, goal-driven individual who strives to bring enthusiasm and a high standard of professionalism to the workplace, both in independent and team environments. I have experience in many areas of programming, and I enjoy playing the piano and video games in my spare time. As a soon-to-be graduate and a former WWDC scholarship winner, I am ready to apply my wide range of both work and personal experience to new and exciting challenges.</p>
-                    <p>If you want to find out more about me, please don't hesitate to <a href="#more-info">contact</a> me. I also have a <a href="/blog">blog</a> that you can check out!</p>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/profile.jpg" alt="Placeholder"
-                            class="img-fluid img-thumbnail content-image">
-                        <figcaption class="figure-caption">I play piano in a big band and trumpet in a concert band some evenings.</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <div id="parallax2" class="parallax"></div>
-
-        <section id="workExperience" class="container content-section">
-            <div id="tripadvisor-needham" class="row">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1>TripAdvisor</h1>
-                    <h3>Software Engineer - Restaurants B2C</h3>
-                    <h6>January 2019 - June 2019</h6>
-                    <p>TripAdvisor is the largest travel site in the world, packed with user reviews about hotels, restaurants, and attractions across every continent. As a member of the Restaurants B2C team, I was responsible for working on some of the user-facing restaurants-related features, bug fixes, and improvements. More specifically, I worked on the TripAdvisor iOS application.</p>
-                    <p>While I was there, I got the opportunity to build upon my existing skills as an iOS developer, working with experienced colleagues to ensure I learned to use best practices to write strong, clear, and reusable Swift code. Among other things, I spent a significant portion of my time working on further advancing the new Nearby Restaurants map/list combo view that launched just after I started.</p>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/tripadvisor.jpg" alt="Placeholder"
-                            class="img-fluid img-thumbnail content-image">
-                        <figcaption class="figure-caption">The TripAdvisor headquarters in Needham, MA is home to over 1,000 employees - approximately a third of all TripAdvisor employees worldwide!
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <hr />
-
-            <div id="tripadvisor-canada" class="row">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1>TripAdvisor Canada</h1>
-                    <h3>Software Engineer - Restaurants B2B</h3>
-                    <h6>May 2018 - August 2018</h6>
-                    <p>Turns out I actually worked for TripAdvisor during two different co-op terms! This was the first time I worked for them, before they offered me the opportunity to work at their headquarters in Needham, MA. As a member of the Restaurants B2B (business-to-business) team, I worked to develop software that restaurants can use to improve their listings on TripAdvisor - anything from on-site ads to animated slideshows of pictures to a multitude of other features.</p>
-                    <p>During my time at TripAdvisor Canada, the company launched an API to allow advertisement agencies to manage ads for their clients (restaurant owners with many locations). This project marked my first contribution to a significant coding project at a company, and it gave me the chance to put my expertise in Java to the test.</p>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/tripadvisorCanada.jpg" alt="Placeholder"
-                            class="img-fluid img-thumbnail content-image">
-                        <figcaption class="figure-caption">Peacefully working on my laptop in the TripAdvisor Canada lounge room.</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <hr />
-
-            <div id="travelclick" class="row">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1>TravelClick</h1>
-                    <h3>Integration Specialist</h3>
-                    <h6>May 2017 - Dec 2017</h6>
-                    <p>TravelClick is a company that specializes in solutions for the hospitality industry. The Ottawa office worked with the Guest Management Solutions (GMS) product, which sent out guest confirmation emails, allowed hotels to conduct surveys, and much more.</p>
-                    <p>TravelClick was my first co-op position. I worked as an Integration Specialist - my job was to connect hotels with our databases by installing the GMS software on their servers. I monitered data feeds, wrote extensive documentation, fixed elusive bugs, and completed several significant code changes, all while ensuring clients were satisfied with our service.</p>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/theYadi.jpg" alt="Placeholder"
-                            class="img-fluid img-thumbnail content-image">
-                        <figcaption class="figure-caption">The trophy awarded to the winners of TravelClick Ottawa's in-house sports tournament (spoiler: my team won).</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <hr />
-
-            <div id="carleton" class="row">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1>Carleton University</h1>
-                    <h3>Undergraduate Research Assistant</h3>
-                    <h6>May 2016 - Sept 2016</h6>
-                    <p>During the summer of 2016, I volunteered to complete some research with a Computer Science professor at Carleton University, Dr. Doron Nussbaum. At the time, he was researching algorithms to find the shortest path to a moving target. The position began as volunteer work, but he was able to secure a grant for the project, allowing me to work full-time.</p>
-                    <p>My time working under Dr. Nussbaum was very useful, as I was able to learn many programming best-practices, develop my critical thinking skills, work on the clarity and conciseness of the documentation I wrote.</p>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/undergradResearch.jpg" alt="Carleton University"
-                            class="img-fluid img-thumbnail content-image">
-                        <figcaption class="figure-caption">I spent Summer 2016 researching algorithms for the fastest path to a moving target at Carleton University.</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <div id="parallax3" class="parallax"></div>
-
-        <section id="projects" class="container content-section">
-            <div id="project1" class="row project">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1 class="project-header">Science Student Success Centre iOS App</h1>
-                    <h3 class="project-subheader">Carleton SSSC Companion App</h3>
-                    <span class="project-description">
-                        <p>As a mentor at the Carleton Science Student Success Centre (SSSC) and a member of the Computer Science team, one of my tasks was to develop a mobile application for the centre. The app, compatible with both iPhones and iPads, displays all of the centre's upcoming events (with optional pre-event notifications), provides students with quick access to the centre's Resources page, and offers a full-fledged assignment tracker and grade calculator.
-                        </p>
-                        <p>There are two components: a mobile front-end that displays information to the user, and a Node.js server that provides an API that the app can use to retrieve event-related information. With the iOS application complete, the rest of the Computer Science team is working on an Android counterpart, to achieve feature parity with the iOS app.</p>
-                    </span>
-                    <h5>Want to see this project?
-                        <a class="project-url" href="https://apple.co/33RRbim" target="_blank" rel="noopener">View</a> -
-                        <a class="project-github" href="https://github.com/AveryVine/SSSC-iOS-App" target="_blank"
-                            rel="noopener">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </h5>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/ssscapp.png" alt="Science Student Success Centre iOS App"
-                            class="img-fluid img-thumbnail content-image project-image">
-                        <figcaption class="figure-caption project-caption">This app provides an easy way for students to view SSSC events, access SSSC resources, and calculate their current/potential grades.</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <hr id="project-separator-1" />
-
-            <div id="project2" class="row project">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1 class="project-header">Cyclo</h1>
-                    <h3 class="project-subheader">WWDC 2019 Scholarship Winner</h3>
-                    <span class="project-description">
-                        <p>I wrote this game as my application for Apple's 2019 WWDC scholarship competition. I made it over the course of 10 days, incorporating various technologies and frameworks for the first time in any of my projects, including Swift Playgrounds, SpriteKit, and AVFoundation.</p>
-                        <p>I was fortunate enough to be selected by Apple as a winner, and was able to attend their 2019 WWDC conference in San Jose, California! Over the course of five days I will be attended various workshops and networked with a multitude of iOS and Mac app developers from around the world. In the months following, I also took a bit of time to convert it into a full-fledged iOS app, which can now be found on the App Store!</p>
-                    </span>
-                    <h5>Want to see this project?
-                        <a class="project-url" href="https://apple.co/39rNLE6"
-                            target="_blank" rel="noopener">View</a> -
-                        <a class="project-github" href="https://github.com/AveryVine/Twister" target="_blank"
-                            rel="noopener">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </h5>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/twister.gif" alt="Cyclo"
-                            class="img-fluid img-thumbnail content-image project-image">
-                        <figcaption class="figure-caption project-caption">I wrote this using Swift Playgrounds over the course of 10 days, and it won me a spot at Apple's 2019 WWDC!</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <hr id="project-separator-2" />
-
-            <div id="project3" class="row project">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1 class="project-header">WingIt</h1>
-                    <h3 class="project-subheader">News Article Political Classifier</h3>
-                    <span class="project-description">
-                        <p>As the final project in my Intelligent Web-based Information Systems course, we were given the freedom to explore a project topic of our choosing, as long as it integrated the course contents. My friend and I built Wing It, a web application that can determine the political leaning of a given news article through content analysis. In addition, the application recommends articles concerning similar topics from left wing, centrist, and right wing news sources.</p>
-                        <p>We used a range of technologies and algorithms to complete this project including Jersey, MongoDB, crawler4j, Naive Bayes analysis, and more. In the future, we hope to continue to improve this project by implementing features ranging from unsupervised learning for training purposes to better contextual recommendation.</p>
-                    </span>
-                    <h5>Want to see this project?
-                        <a class="project-github" href="https://github.com/lifeofcows/WingIt" target="_blank"
-                            rel="noopener">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </h5>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/wingit.jpg" alt="WingIt"
-                            class="img-fluid img-thumbnail content-image project-image">
-                        <figcaption class="figure-caption project-caption">When a user enters an article, its political leaning is analyzed and recommendations are made from news sources with alternative political leanings.</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <div id="project4" class="row project">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1 class="project-header">Personal Website</h1>
-                    <h3 class="project-subheader">Personal Profile and Resume</h3>
-                    <span class="project-description">
-                        <p>I first developed my website in January of 2017, in preparation for my first co-op job search. I had just completed my web development class, so with that fresh motivation I taught myself to use the w3.css framework, enabling quick and easy development.</p>
-                        <p>Looking back in November 2017, I realized that my website looked a degree amateur-ish, so I decided to revamp my it using my newly-acquired understanding of Bootstrap 4 - creating a responsive, modern website that can properly represent me as a developer.</p>
-                    </span>
-                    <h5>Want to see this project?
-                        <a class="project-github" href="https://github.com/AveryVine/averyvineWebsite" target="_blank"
-                            rel="noopener">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </h5>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/website.jpg" alt="Personal Website"
-                            class="img-fluid img-thumbnail content-image project-image">
-                        <figcaption class="figure-caption project-caption">My website's first iteration, from January 2017.</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <hr id="project-separator-4" />
-
-            <div id="project5" class="row project">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1 class="project-header">Two Buttons</h1>
-                    <h3 class="project-subheader">The Reflex Tapping Game</h3>
-                    <span class="project-description">
-                        <p>I first began developing this application when a friend came to me, requesting that I make an app to help her with a demonstration for one of her classes. After a short time, I realized that this had the potential to become a full-fledged app, so I pursued development beyond just the basic stages.</p>
-                        <p>I eventually completed the app in June of 2016, however I was unable to submit it to the App Store due to developer age restrictions. After a short wait, I paid the developer feeds and completed the submission process.
-                        </p>
-                    </span>
-                    <h5>Want to see this project?
-                        <a class="project-url" href="https://apple.co/2UFIe7z" target="_blank" rel="noopener">View</a> -
-                        <a class="project-github" href="https://github.com/AveryVine/twoButtonsGameiOS" target="_blank"
-                            rel="noopener">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </h5>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/twoButtons.jpg" alt="Two Buttons"
-                            class="img-fluid img-thumbnail content-image project-image">
-                        <figcaption class="figure-caption project-caption">I developed and released an iOS app that tests your reaction time during my spare time.</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <hr id="project-separator-5" />
-
-            <div id="project6" class="row project">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1 class="project-header">Quests of the Round Table</h1>
-                    <h3 class="project-subheader">Classic Board/Card Game, Digitized</h3>
-                    <span class="project-description">
-                        <p>This project was a collaboration between myself and three classmates for one of my courses, Object-Oriented Software Engineering. In this physical card game turned digital, players vie to become the winner (Knight of the Round Table) by completing quests, participating in tournaments, and more.</p>
-                        <p>I taught myself Unity and C# for the purpose of this project, as using Unity made the graphics development and integration significantly easier. In addition, as it was the focus of the class, I integrated several design patterns into the code, including Mediator, Strategy, and more.</p>
-                    </span>
-                    <h5>Want to see this project?
-                        <a class="project-github" href="https://github.com/JKirkYuan/Quest" target="_blank"
-                            rel="noopener">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </h5>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/quest.jpg" alt="Quests of the Round Table"
-                            class="img-fluid img-thumbnail content-image project-image">
-                        <figcaption class="figure-caption project-caption">In this multiplayer card game, players compete to become a Knight of the Round Table.</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <div id="project7" class="row project">
-                <div class="col-lg-7 col-sm content-block">
-                    <h1 class="project-header">Notepadd</h1>
-                    <h3 class="project-subheader">Music from Text</h3>
-                    <span class="project-description">
-                        <p>This website was the hackathon brainchild of myself, two of my friends from Carleton, and a Waterloo student. Notepadd takes in whatever text you give it, and generates a song based off of average sentence length, punctuation usage, and syllabic breakdown - all while using iambic pentameter to determine what notes to play. The user can select either a major or a minor chord progression, and modify instrument volume while the song plays.</p>
-                    </span>
-                    <h5>Want to see this project?
-                        <a class="project-url" href="http://notepadd.herokuapp.com" target="_blank"
-                            rel="noopener">View</a>
-                        -
-                        <a class="project-github" href="https://github.com/wenbenz/quacks17" target="_blank"
-                            rel="noopener">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </h5>
-                </div>
-                <div class="col-lg col-sm">
-                    <figure class="figure">
-                        <img src="/assets/minified/notepadd.jpg" alt="NotePadd"
-                            class="img-fluid img-thumbnail content-image project-image">
-                        <figcaption class="figure-caption project-caption">I helped to create this website that turns written text into music at a hackathon.</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-7 col-sm content-block">
-                    <h4>
-                        <a href="javascript:void(0);" onclick="getProjects();">Click for more projects!
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </h4>
-                </div>
-                <div class="col-lg col-sm">
-                </div>
-            </div>
-        </section>
-
-        <div id="parallax4" class="parallax"></div>
-
-        <section id="more-info" class="container content-section">
-            <div class="row">
-                <div class="col">
-                    <h1>More Info</h1>
-                    <h3>Blog, resume, and more!</h3>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col content-block">
-                    <div class="list-group mt-4">
-                        <a href="/blog" class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">
-                                    <i class="fa fa-rss"></i> Blog</h5>
-                            </div>
-                            <p class="mb-1">Check out my blog for some cool entries on a variety of topics, both personal and professional!</p>
-                        </a>
-                        <a href="/assets/resume.pdf"
-                            class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">
-                                    <i class="fa fa-cloud-download"></i> Resume</h5>
-                            </div>
-                            <p class="mb-1">Want more details? You can download my resume by clicking or tapping anywhere.</p>
-                        </a>
-
-                        <a href="mailto:averyvine@icloud.com"
-                            class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">
-                                    <i class="fa fa-envelope-o"></i> Email</h5>
-                            </div>
-                            <p class="mb-1">If you have any questions, feel free to reach out to me by email at <u>averyvine@icloud.com!</u></p>
-                        </a>
-
-                        <a href="https://github.com/AveryVine" target="_blank" rel="noopener"
-                            class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">
-                                    <i class="fa-brands fa-github"></i> GitHub</h5>
-                            </div>
-                            <p class="mb-1">Take a look at some of the cool projects I've been involved in. <u>www.github.com/AveryVine</u></p>
-                        </a>
-
-                        <a href="https://linkedin.com/in/averyvine" target="_blank" rel="noopener"
-                            class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">
-                                    <i class="fa-brands fa-linkedin"></i> LinkedIn</h5>
-                            </div>
-                            <p class="mb-1">Check out my LinkedIn page and connect with me! <u>www.linkedin.com/in/averyvine</u></p>
-                        </a>
-                        <a href="https://mastodon.social/@averyvine" target="_blank" rel="noopener me"
-                            class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">
-                                    <i class="fa-brands fa-mastodon"></i> Mastodon</h5>
-                            </div>
-                            <p class="mb-1">Find me on social media where I may or may not talk about tech. <u>www.mastodon.social/@averyvine</u></p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </article>
-</body>
-
-</html>
+    @media(max-width: 1024px) {
+        #cyclo-title-image-container {
+            height: 220px;
+        }
+    }
+</style>
+<header><nav class="fixed-top navbar navbar-expand-md" style="background-color: rgb(52 58 64 / 100%)" data-bs-theme="dark"><div class="container-fluid"><a href="/" class="navbar-brand"><img src="/images/logo.svg" alt=""/></a><button type="button" class="navbar-toggler btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div id="navbarCollapse" class="collapse navbar-collapse"><ul class="navbar-nav mb-2 mb-md-0 col justify-content-end"><li class="nav-item"><a href="/all-posts" class="pe-3 nav-link">Blog</a></li><li class="nav-item"><a href="/work" class="pe-3 nav-link">Work</a></li><li class="nav-item dropdown" data-bs-theme="light"><a href="#" role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">My Stuff</a><ul class="dropdown-menu"><li><a href="https://getdroplet.app" target="_blank" class="dropdown-item">Droplet</a></li><li><a href="/cyclo" class="dropdown-item">Cyclo</a></li><li><a href="/projects" class="dropdown-item">All Projects</a></li></ul></li><li class="nav-item dropdown" data-bs-theme="light"><a href="#" role="button" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">Find Me Online</a><ul class="dropdown-menu"><li><a href="https://mastodon.social/@averyvine" rel="me" target="_blank" class="dropdown-item"><i class="bi-mastodon"></i> Mastodon</a></li><li><a href="https://github.com/AveryVine" target="_blank" class="dropdown-item"><i class="bi-github"></i> Github</a></li><li><a href="https://linkedin.com/in/averyvine" target="_blank" class="dropdown-item"><i class="bi-linkedin"></i> LinkedIn</a></li><li><a href="mailto:averyvine@icloud.com" target="_blank" class="dropdown-item"><i class="bi-envelope-fill"></i> E-mail</a></li></ul></li></ul></div></div></nav></header><div class="title-image-container text-center" style="padding-bottom: 10px"><div class="row"><div class="col-5 block m-auto"><div><img src="images/AveryVine.jpeg" class="img-fluid mt-3 p-2" style="border-radius: 2%; background-color: rgb(255 255 255 / 100%); max-width: 250px; width: 100%" alt="Me, wearing a puffy winter jacket and a scarf"/></div></div><div class="col-sm-1 d-sm-block d-none m-auto"><p class="d-sm-block d-none"></p></div><div class="col-sm-6 col-7 block m-auto"><div class="text-start" style="color: rgb(255 255 255 / 100%); font-family: workSans, sans-serif; padding-top: 20px"><h1 class="block">Hi, I’m Avery!</h1><p class="lead mt-2 block">Software engineer at Apple, avid pianist, and proud cat owner.</p><p class="lead d-md-block d-none">Ottawa 🇨🇦 → San Francisco 🇺🇸</p></div></div><div class="col block m-auto"><div class="mt-3 mt-md-5"><p class="lead d-md-none d-block" style="color: rgb(255 255 255 / 100%); font-family: workSans, sans-serif">Ottawa 🇨🇦 → San Francisco 🇺🇸</p></div></div></div><div id="home-title-image" class="title-image"></div></div><div class="mt-5"><h3 class="block">About Me</h3><p class="block">I’m a Localization Software Engineer at Apple, helping to make the software you use every day work seamlessly in over 40 languages. When I’m not programming, I love playing piano and video games—they often compete for my attention! General tech enthusiast, enjoyer of cats, and extremely infrequent blogger.</p><p class="block"><a href="/work#apple-localization-software-engineer" class="ms-0 me-2"><span class="badge bg-primary-subtle text-primary-emphasis rounded-pill"><i class="bi-person-badge-fill" style="padding-right: 5px"></i>Apple</span></a><a href="/projects#droplet-plant-care-i-o-s-app" class="ms-0 me-2"><span class="badge bg-primary-subtle text-primary-emphasis rounded-pill"><i class="bi-phone-fill" style="padding-right: 5px"></i>Droplet</span></a><a href="https://mastodon.social/@averyvine" target="_blank" class="ms-0 me-2"><span class="badge bg-primary-subtle text-primary-emphasis rounded-pill"><i class="bi-mastodon" style="padding-right: 5px"></i>averyvine</span></a></p></div><div class="mt-3"><hr class="underlined" /></div><div class="gy-4 gx-5 mt-4 row"><div class="col-md-7 col-lg-8 block"><div><h5 class="recent-post-title block" style="font-weight: 500"><a href="/post/mouse-trackpad-support-in-ipados-a-welcome-addition">Mouse/Trackpad Support in iPadOS - A Welcome Addition!</a></h5><p class="text-body-secondary block" style="font-family: workSans, sans-serif; font-size: 14px; margin-top: -8px">Posted 4 years ago</p><p class="block" style="margin-top: -8px">Today, Apple released iOS 13.4 and iPadOS 13.4. Alongside such features as iCloud folder sharing and expanded keyboard support (especially for developers), Apple has added full trackpad and mouse support for iPads. You might have noticed the small grey circle in the centre of the screenshot above - that’s the pointer! After spending less than 5 minutes with my Magic Trackpad paired with my 2018 iPad Pro 11”, I can say that I am absolutely blown away.<a href="/post/mouse-trackpad-support-in-ipados-a-welcome-addition"> Read&nbspmore…</a></p></div></div><div class="col-md-5 col-lg-4 d-md-block d-none"><div style="margin-bottom: 20px"><img src="/blog/mouse-trackpad-support-in-ipados-a-welcome-addition/ipad-webpage.png" class="img-fluid mt-1" style="border-radius: 5px" alt=""/></div></div><div class="col-md-7 col-lg-8 block"><div><h5 class="recent-post-title block" style="font-weight: 500"><a href="/linked/practical-learning-powers-success-in-science">Practical Learning Powers Success in Science</a></h5><p class="text-body-secondary block" style="font-family: workSans, sans-serif; font-size: 14px; margin-top: -8px">Linked 4 years ago</p><p class="block" style="margin-top: -8px">Back in July 2019, I was interviewed for an article in Carleton University’s <em>Eureka!</em> magazine, which was preparing to feature a collection of students from the Faculty of Science who exemplified experiential learning. In October, the magazine finally came out.<a href="/linked/practical-learning-powers-success-in-science"> Read&nbspmore…</a></p></div></div><div class="col-md-5 col-lg-4 d-md-block d-none"><div style="margin-bottom: 20px"><img src="/blog/practical-learning-powers-success-in-science/carleton-website.png" class="img-fluid mt-1" style="border-radius: 5px" alt=""/></div></div><div class="col-md-7 col-lg-8 block"><div><h5 class="recent-post-title block" style="font-weight: 500"><a href="/post/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy">Publishing to Jekyll From iPad with Shortcuts and Working Copy</a></h5><p class="text-body-secondary block" style="font-family: workSans, sans-serif; font-size: 14px; margin-top: -8px">Posted 5 years ago</p><p class="block" style="margin-top: -8px">This is a post that has sort of been in the works for a while now, ever since I got the chance to travel halfway around the world this summer! You can read more about that trip here.</p><p>My blog is generated using Jekyll, a wonderful static website generator that allows me to convert markdown files into new posts with very little effort.<a href="/post/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy"> Read&nbspmore…</a></p></div></div><div class="col-md-5 col-lg-4 d-md-block d-none"><div style="margin-bottom: 20px"><img src="/blog/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/blog-home-page.png" class="img-fluid mt-1" style="border-radius: 5px" alt=""/></div></div><div class="col block"><div class="text-center"><a href="/all-posts" class="btn btn-primary">View All Posts</a></div></div></div><p class="text-center mt-5 block">Created with <a href="https://github.com/twostraws/Ignite">Ignite</a></p></div></div></body><script src="/js/bootstrap.bundle.min.js"></script><script src="/js/syntax-highlighting.js"></script></html>
