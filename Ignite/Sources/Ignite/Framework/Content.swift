@@ -96,6 +96,16 @@ public struct Content {
         ?? ""
     }
 
+    public func imageHTML(relativeTo siteURL: URL) -> String? {
+        if let image {
+            """
+<p><img src="\(image.makingAbsoluteLinks(relativeTo: siteURL))" alt="\(imageDescription)" class="img-fluid"></p>
+"""
+        } else {
+            nil
+        }
+    }
+
     /// Whether this content should be published on the site or not. Defaults to true.
     public var isPublished: Bool {
         if let published = metadata["published"] as? String {
