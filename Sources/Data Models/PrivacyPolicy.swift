@@ -21,7 +21,7 @@ Avery Vine ("I", "me") operates the Cyclo mobile application (the "Service").
 
 This page informs you of my policies regarding the collection, use, and disclosure of personal data when you use my Service and the choices you have associated with that data.
 
-### Information Collection and Use
+## Information Collection and Use
 
 I **do not** collect or use any of your personal data for any reason.
 
