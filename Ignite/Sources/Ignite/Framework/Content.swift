@@ -96,14 +96,25 @@ public struct Content {
         ?? ""
     }
 
-    public func imageHTML(relativeTo siteURL: URL) -> String? {
+    /// An HTML representation of the `image` and `imageDescription`, for use with RSS.
+    public func imageHTML(relativeTo siteURL: URL) -> String {
         if let image {
             """
 <p><img src="\(image.makingAbsoluteLinks(relativeTo: siteURL))" alt="\(imageDescription)" class="img-fluid"></p>
 """
         } else {
-            nil
+            ""
         }
+    }
+
+    /// An HTML representation of the `subtitle` (assuming it is a URL), for use with RSS.
+    public func linkedPostURLHTML(relativeTo siteURL: URL) -> String {
+        guard let subtitle, let linkedURL = URL(string: subtitle.makingAbsoluteLinks(relativeTo: siteURL)) else {
+            return ""
+        }
+        return """
+<p><a href="\(linkedURL.relativeString)">View Linked Content</a></p>
+"""
     }
 
     /// Whether this content should be published on the site or not. Defaults to true.
