@@ -45,7 +45,7 @@ extension Job {
             description: "The rainbow stage inside of Apple Park, on a beautiful sunny day"
         ),
         description: """
-At Apple, I work with a wide array of Apple softare engineering teams, international software QA centres, translators, and project managers to ensure that Apple delivers world-class software products to our international markets. In short, I help make sure Apple software products work beautifully for millions of users all over the world, in over 40 languages!
+At Apple, I work with a wide array of Apple software engineering teams, international software QA centres, translators, and project managers to ensure that Apple delivers world-class software products to our international markets. In short, I help make sure Apple software products work beautifully for millions of users all over the world, in over 40 languages!
 
 Products I’ve worked on include:
 - Apple’s operating systems (iOS, macOS, etc.)
