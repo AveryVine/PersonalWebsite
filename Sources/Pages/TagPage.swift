@@ -30,7 +30,7 @@ struct Tags: TagPage {
                 }
             }
             .horizontalAlignment(.trailing)
-            .margin(.top, -60)
+            .margin(.top, -52)
             .margin(.bottom, .extraLarge)
 
             BlogPostList(

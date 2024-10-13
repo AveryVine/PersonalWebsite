@@ -19,13 +19,22 @@ struct AllPosts: StaticPage {
             .margin(.bottom, .large)
 
         Text {
-            Image(systemName: "rss-fill")
-                .foregroundStyle(Color(hex: "#f26522"))
-                .margin(.trailing, 5)
-            Link("Feed", target: "/feed.rss")
+            Link(target: "/feed.rss") {
+                Image(systemName: "rss-fill")
+                    .foregroundStyle(Color(hex: "#f26522"))
+                    .margin(.trailing, 5)
+                "Feed"
+            }
+
+            Link(target: "/tags") {
+                Image(systemName: "tags-fill")
+                    .margin(.trailing, 5)
+                "All Tags"
+            }
+            .margin(.leading)
         }
         .horizontalAlignment(.trailing)
-        .margin(.top, -60)
+        .margin(.top, -52)
         .margin(.bottom, .extraLarge)
 
         BlogPostList(
