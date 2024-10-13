@@ -10,6 +10,7 @@ import Ignite
 
 struct Work: StaticPage {
     var title = "Work"
+    var theme = MainTheme(includeAuthorAttribution: false)
 
     func body(context: PublishingContext) -> [BlockElement] {
         Text("Work Experience")

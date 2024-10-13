@@ -11,7 +11,7 @@ import Ignite
 struct AppPageTheme: Theme {
     func render(page: Page, context: PublishingContext) -> HTML {
         HTML {
-            Head(for: page, in: context)
+            Head(for: page, in: context, includeAuthorAttribution: false)
             Body {
                 Group {
                     Include("Styles.html")

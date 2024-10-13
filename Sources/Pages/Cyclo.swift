@@ -10,7 +10,6 @@ import Ignite
 
 struct Cyclo: StaticPage {
     var title = "Cyclo"
-
     var theme = AppPageTheme()
 
     func body(context: PublishingContext) -> [BlockElement] {

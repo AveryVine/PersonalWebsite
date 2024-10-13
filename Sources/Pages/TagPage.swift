@@ -8,7 +8,9 @@
 import Foundation
 import Ignite
 
-struct Tags: TagPage {    
+struct Tags: TagPage {
+    var theme = MainTheme(includeAuthorAttribution: false)
+
     func body(tag: String?, context: PublishingContext) -> [any BlockElement] {
         if let tag {
             Text {

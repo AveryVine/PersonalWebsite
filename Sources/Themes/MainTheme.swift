@@ -9,9 +9,11 @@ import Foundation
 import Ignite
 
 struct MainTheme: Theme {
+    let includeAuthorAttribution: Bool
+
     func render(page: Page, context: PublishingContext) -> HTML {
         HTML {
-            Head(for: page, in: context)
+            Head(for: page, in: context, includeAuthorAttribution: includeAuthorAttribution)
             Body {
                 Group {
                     Include("Styles.html")

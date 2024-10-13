@@ -30,7 +30,9 @@ public struct Head: HTMLRootElement {
     ///   - page: The `Page` you want to create headers for.
     ///   - context: The active `PublishingContext`, which includes
     ///   information about the site being rendered and more.
-    public init(for page: Page, in context: PublishingContext) {
+    ///   - includeAuthorAttribution: Whether Fediverse author
+    ///   attribution should be included on this page.
+    public init(for page: Page, in context: PublishingContext, includeAuthorAttribution: Bool) {
         self.init {
             MetaTag.utf8
             MetaTag.flexibleViewport
@@ -41,6 +43,10 @@ public struct Head: HTMLRootElement {
 
             if context.site.author.isEmpty == false {
                 MetaTag(name: "author", content: context.site.author)
+            }
+
+            if includeAuthorAttribution {
+                MetaTag(name: "fediverse:creator", content: "@averyvine@mastodon.social")
             }
 
             MetaTag.generator

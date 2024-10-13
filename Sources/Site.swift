@@ -15,9 +15,11 @@ struct IgniteWebsite {
 }
 
 struct PersonalWebsite: Site {
+    static let domain: StaticString = "https://www.averyvine.com"
+
     var name = "Avery Vine"
     var baseTitle = " – Avery Vine"
-    var url = URL("https://www.averyvine.com")
+    var url = URL(domain)
 
     var builtInIconsEnabled = true
     var syntaxHighlighters = [SyntaxHighlighter.swift, .yaml]
@@ -30,7 +32,7 @@ struct PersonalWebsite: Site {
     var projectsPage = Projects()
     var cycloPage = Cyclo()
     var tagPage = Tags()
-    var theme = MainTheme()
+    var theme = MainTheme(includeAuthorAttribution: true)
 
     var pages: [any StaticPage] {
         homePage
