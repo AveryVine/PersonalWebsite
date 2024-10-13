@@ -62,15 +62,17 @@ struct Cyclo: StaticPage {
         .margin(.top, .extraLarge)
 
         Group {
-            Text("Privacy Policy")
-                .font(.title1)
-                .class("underlined")
-                .margin(.top, .extraLarge)
-            Text{
-                "Effective date: "
-                PrivacyPolicy.cyclo.effectiveDate.formatted(date: .long, time: .omitted)
+            Accordion {
+                Item("Privacy Policy") {
+                    Text{
+                        "Effective date: "
+                        PrivacyPolicy.cyclo.effectiveDate.formatted(date: .long, time: .omitted)
+                    }
+                    Text(MarkdownToHTML(markdown: PrivacyPolicy.cyclo.policyText).body)
+                }
             }
-            Text(MarkdownToHTML(markdown: PrivacyPolicy.cyclo.policyText).body)
+            .margin(.top, .extraLarge)
         }
+        .id("privacy-policy")
     }
 }

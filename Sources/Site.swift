@@ -31,6 +31,7 @@ struct PersonalWebsite: Site {
     var workPage = Work()
     var projectsPage = Projects()
     var cycloPage = Cyclo()
+    var dropletPage = Droplet()
     var tagPage = Tags()
     var theme = MainTheme(includeAuthorAttribution: true)
 
@@ -39,6 +40,7 @@ struct PersonalWebsite: Site {
         allPostsPage
         workPage
         projectsPage
+        dropletPage
         cycloPage
     }
 

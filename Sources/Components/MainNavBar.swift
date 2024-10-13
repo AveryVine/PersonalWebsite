@@ -17,8 +17,7 @@ struct MainNavBar: Component {
                 .padding(.trailing, .medium)
 
             Dropdown("My Stuff") {
-                Link("Droplet", target: "https://getdroplet.app")
-                    .target(.blank)
+                Link("Droplet", target: "/droplet")
                 Link("Cyclo", target: "/cyclo")
                 Link("All Projects", target: "/projects")
             }

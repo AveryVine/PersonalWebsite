@@ -60,7 +60,7 @@ Droplet is a plant care app, helping you keep track of when you need to water or
 
 I began working on Droplet during WWDC 2019, as I was  looking for a project to try out some of the brand new APIs that were launching that year. I took a break when returning to university, but completed the project just before I began working at Apple.
 """,
-        links: Links(appStoreURL: "https://apps.apple.com/app/id1466106369", webURL: "https://getdroplet.app")
+        links: Links(appStoreURL: "https://apps.apple.com/app/id1466106369", webURL: "/droplet")
     )
 
     // MARK: SSSC iOS App

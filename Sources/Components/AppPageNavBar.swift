@@ -13,7 +13,7 @@ struct AppPageNavBar: Component {
         NavigationBar {
             Link("Cyclo", target: "/cyclo")
                 .padding(.trailing, .medium)
-            Link("Droplet", target: "https://getdroplet.app")
+            Link("Droplet", target: "/droplet")
                 .padding(.trailing, .medium)
         }
         .navigationBarStyle(.dark)
