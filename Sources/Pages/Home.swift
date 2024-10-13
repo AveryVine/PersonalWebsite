@@ -72,7 +72,7 @@ struct Home: StaticPage {
             Text("I’m a Localization Software Engineer at Apple, helping to make the software you use every day work seamlessly in over 40 languages. When I’m not programming, I love playing piano and video games—they often compete for my attention! General tech enthusiast, enjoyer of cats, and extremely infrequent blogger.")
             Text {
                 BadgeLink("Apple", path: "/work#apple-localization-software-engineer", systemImage: "person-badge-fill")
-                BadgeLink("Droplet", path: "/projects#droplet-plant-care-i-o-s-app", systemImage: "phone-fill")
+                BadgeLink("Droplet", path: "/droplet", systemImage: "phone-fill")
                 BadgeLink("averyvine", path: "https://mastodon.social/@averyvine", systemImage: "mastodon", external: true)
             }
         }
