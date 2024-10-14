@@ -2,7 +2,7 @@
 image: /blog/new-zealand-100-pure-new-zealand/tekapo.jpeg
 alt: View of Lake Tekapo and nearby mountains
 tags: new zealand, travel
-date: 2019-08-22 12:00
+date: 2019-08-22 12:00 -07:00
 ---
 
 ## New Zealand - 100% Pure New Zealand

@@ -2,7 +2,7 @@
 image: /blog/mouse-trackpad-support-in-ipados-a-welcome-addition/ipad-webpage.png
 alt: Apple’s iPad webpage, featuring the iPadOS pointer in the centre
 tags: ipad, apple, tech
-date: 2020-03-24 12:00
+date: 2020-03-24 12:00 -07:00
 ---
 
 ## Mouse/Trackpad Support in iPadOS - A Welcome Addition!

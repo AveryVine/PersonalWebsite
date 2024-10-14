@@ -2,7 +2,7 @@
 image: /blog/da-nang-and-hoi-an-vietnam/bridge-one-hand.jpeg
 alt: Golden Hands Bridge
 tags: da nang, hoi an, vietnam, travel
-date: 2019-08-20 12:00
+date: 2019-08-20 12:00 -07:00
 ---
 
 ## Da Nang and Hoi An, Vietnam

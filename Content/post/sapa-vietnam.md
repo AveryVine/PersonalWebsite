@@ -2,7 +2,7 @@
 image: /blog/sapa-vietnam/rice-fields-in-valley-pano.jpeg
 alt: Rice fields in the valley
 tags: sapa, vietnam, travel
-date: 2019-08-17 12:00
+date: 2019-08-17 12:00 -07:00
 ---
 
 ## Sapa, Vietnam

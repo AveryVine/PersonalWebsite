@@ -2,7 +2,7 @@
 image: /blog/wellington-new-zealand/train.jpeg
 alt: The Northern Explorer train
 tags: wellington, new zealand, travel
-date: 2019-08-25 12:00
+date: 2019-08-25 12:00 -07:00
 ---
 
 ## Wellington, New Zealand

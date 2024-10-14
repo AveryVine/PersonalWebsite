@@ -2,7 +2,7 @@
 image: /blog/auckland-new-zealand/green-dragon-outside.jpeg
 alt: The Green Dragon
 tags: auckland, new zealand, travel
-date: 2019-08-25 12:00
+date: 2019-08-25 12:00 -07:00
 ---
 
 ## Auckland, New Zealand

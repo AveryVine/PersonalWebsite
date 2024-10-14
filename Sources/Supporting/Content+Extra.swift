@@ -10,23 +10,17 @@ import Ignite
 
 extension Content {
     var byline: String {
-        "\(dateInCurrentTimeZone.formatted(date: .long, time: .shortened)) by \(author ?? "Avery Vine")"
+        "\(date.formatted(date: .long, time: .shortened)) by \(author ?? "Avery Vine")"
     }
 
     var shortByline: String {
-        "\(layoutType.bylineAction) \(dateInCurrentTimeZone.formatted(.relative(presentation: .named)))"
+        "\(layoutType.bylineAction) \(date.formatted(.relative(presentation: .named)))"
     }
 
     var duration: String {
         let estimatedReadingSeconds = estimatedReadingMinutes * 60
         let formattedDuration = Duration.seconds(estimatedReadingSeconds).formatted(.units(allowed: [.minutes]))
         return "Estimated: \(formattedDuration)"
-    }
-
-    var dateInCurrentTimeZone: Date {
-        guard !hasAutomaticDate else { return date }
-        let seconds = TimeZone.current.secondsFromGMT(for: date)
-        return date.addingTimeInterval(TimeInterval(-seconds))
     }
 
     var link: String? {

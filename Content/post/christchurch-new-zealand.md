@@ -2,7 +2,7 @@
 image: /blog/christchurch-new-zealand/church.jpeg
 alt: Damaged church in Christchurch
 tags: christchurch, new zealand, travel
-date: 2019-08-26 12:00
+date: 2019-08-26 12:00 -07:00
 ---
 
 ## Christchurch, New Zealand

@@ -2,7 +2,7 @@
 image: /blog/practical-learning-powers-success-in-science/carleton-website.png
 alt: Carleton University’s home page today
 tags: tripadvisor, carleton university, appearance
-date: 2020-01-23 12:00
+date: 2020-01-23 12:00 -07:00
 layout: Linked
 subtitle: https://newsroom.carleton.ca/story/practical-learning-science-success/?utm_source=Homepage&utm_medium=Banner
 ---

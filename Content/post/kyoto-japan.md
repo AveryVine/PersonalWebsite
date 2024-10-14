@@ -2,7 +2,7 @@
 image: /blog/kyoto-japan/gion-festival.jpg
 alt: Man holding flag during Gion Festival
 tags: kyoto, japan, travel
-date: 2019-08-13 12:00
+date: 2019-08-13 12:00 -07:00
 ---
 
 ## Kyoto, Japan
@@ -24,7 +24,7 @@ I got the opportunity to meet some super fun people while I was there. It’s am
 
 Kyoto was relatively untouched during World War II, so lots of its cultural heritage has been preserved, which makes for some fantastic visits to local temples and shrines. I especially want to highlight three of the ones I got the chance to see.
 
-The first is Kinkaku-ji, meaning "Temple of the Golden Pavilion." It is probably one of the most famous temples in all of Japan, and deservedly so. The primary building is covered in pure gold leaf and surrounded by water and woodland, making for a beautifully serene viewing experience. Despite the relatively large number of people, I didn’t feel that anyone was jostling to get photos, but maybe that’s just because the temple is gorgeous from any angle. 
+The first is Kinkaku-ji, meaning "Temple of the Golden Pavilion." It is probably one of the most famous temples in all of Japan, and deservedly so. The primary building is covered in pure gold leaf and surrounded by water and woodland, making for a beautifully serene viewing experience. Despite the relatively large number of people, I didn’t feel that anyone was jostling to get photos, but maybe that’s just because the temple is gorgeous from any angle.
 
 ![Kinkaku-ji Temple](/blog/kyoto-japan/kinkaku-ji.jpeg)
 *Kinkaku-ji over the water*

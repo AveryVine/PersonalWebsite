@@ -2,7 +2,7 @@
 image: /blog/farewell-tripadvisor/tripadvisor-headquarters.jpg
 alt: TripAdvisor headquarters
 tags: tripadvisor, ottawa, canada
-date: 2018-09-02 12:00
+date: 2018-09-02 12:00 -07:00
 ---
 
 ## Farewell, TripAdvisor

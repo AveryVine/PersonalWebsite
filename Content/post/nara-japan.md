@@ -2,7 +2,7 @@
 image: /blog/nara-japan/deer-selfie.jpeg
 alt: Selfie with deer
 tags: nara, japan, travel
-date: 2019-08-14 12:00
+date: 2019-08-14 12:00 -07:00
 ---
 
 ## Nara, Japan

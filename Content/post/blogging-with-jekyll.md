@@ -2,7 +2,7 @@
 image: /blog/blogging-with-jekyll/jekyll-home-page.png
 alt: Jekyll’s home page
 tags: jekyll, programming, tech
-date: 2018-08-28 12:00
+date: 2018-08-28 12:00 -07:00
 ---
 
 ## Blogging with Jekyll

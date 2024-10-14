@@ -2,7 +2,7 @@
 image: /blog/queenstown-new-zealand/queenstown.jpeg
 alt: Queenstown at dusk
 tags: queenstown, new zealand, travel
-date: 2019-08-26 12:00
+date: 2019-08-26 12:00 -07:00
 ---
 
 ## Queenstown, New Zealand

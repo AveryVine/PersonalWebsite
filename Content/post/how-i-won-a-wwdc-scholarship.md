@@ -2,7 +2,7 @@
 image: /blog/how-i-won-a-wwdc-scholarship/wwdc.jpg
 alt: WWDC 2019
 tags: programming, tech, wwdc, san jose, united states
-date: 2019-04-16 12:00
+date: 2019-04-16 12:00 -07:00
 ---
 
 ## How I Won a WWDC Scholarship

@@ -2,7 +2,7 @@
 image: /blog/ho-chi-minh-city-vietnam/alley.jpeg
 alt: Gate leading into an alley
 tags: ho chi minh city, vietnam, travel
-date: 2019-08-22 12:00
+date: 2019-08-22 12:00 -07:00
 ---
 
 ## Ho Chi Minh City, Vietnam

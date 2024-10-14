@@ -2,7 +2,7 @@
 image: /blog/the-one-minute-manager/book-logo.jpg
 alt: The One Minute Manager
 tags: sssc, university
-date: 2018-08-28 12:00
+date: 2018-08-28 12:00 -07:00
 layout: Linked
 subtitle: https://www.midmich.edu/application/files/7514/7759/5455/The-One-Minute-Manager.pdf
 ---

@@ -2,7 +2,7 @@
 image: /blog/tokyo-japan/akihabara-cover.jpeg
 alt: Akihabara district
 tags: tokyo, japan, travel
-date: 2019-08-07 12:00
+date: 2019-08-07 12:00 -07:00
 ---
 
 ## Tokyo, Japan

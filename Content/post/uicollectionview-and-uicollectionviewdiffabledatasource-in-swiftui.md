@@ -2,12 +2,12 @@
 image: /blog/uicollectionview-and-uicollectionviewdiffabledatasource-in-swiftui/swiftui-cover.png
 alt: SwiftUI icon and name, above the slogan “Better apps. Less code.”
 tags: programming, tech, wwdc, apple
-date: 2019-06-07 12:00
+date: 2019-06-07 12:00 -07:00
 ---
 
 ## Implementing UICollectionView / UICollectionView DiffableDataSource in SwiftUI
 
-Just a few days ago at WWDC19, Apple announced that they had been developing an incredible new declaritive UI framework called [SwiftUI](https://developer.apple.com/xcode/swiftui), designed to substantially increase the rate at which developers can create, test, and tweak beautiful layouts for their apps. However, it became clear after the first day or two of the conference that not quite everything that was possible using UIKit had an equivalent in SwiftUI, notably `UICollectionView`. To find out how to interate `UICollectionView` with SwiftUI, I did what any WWDC attendee (or [scholarship winner](/post/how-i-won-a-wwdc-scholarship)!) would do: asked at the labs! Today I'll be sharing with you what I found out. 
+Just a few days ago at WWDC19, Apple announced that they had been developing an incredible new declaritive UI framework called [SwiftUI](https://developer.apple.com/xcode/swiftui), designed to substantially increase the rate at which developers can create, test, and tweak beautiful layouts for their apps. However, it became clear after the first day or two of the conference that not quite everything that was possible using UIKit had an equivalent in SwiftUI, notably `UICollectionView`. To find out how to interate `UICollectionView` with SwiftUI, I did what any WWDC attendee (or [scholarship winner](/post/how-i-won-a-wwdc-scholarship)!) would do: asked at the labs! Today I'll be sharing with you what I found out.
 
 Of course, since SwiftUI is only available for devices running iOS 13+, iPadOS 13+, etc, I figured we may as well take advantage of another iOS 13 -specific API that Apple announced: `UICollectionViewDiffableDataSource`, designed to greatly simplify insertion, deletion, and general content management for collections.
 

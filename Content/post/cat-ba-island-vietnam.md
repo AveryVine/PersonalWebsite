@@ -2,7 +2,7 @@
 image: /blog/cat-ba-island-vietnam/monkey-island-beach.jpeg
 alt: Monkey Island beach from above
 tags: cat ba island, vietnam, travel
-date: 2019-08-19 12:00
+date: 2019-08-19 12:00 -07:00
 ---
 
 ## Cat Ba Island, Vietnam

@@ -2,7 +2,7 @@
 image: /blog/mt-fuji-and-lake-kawaguchiko-japan/mountain-over-lake.jpeg
 alt: Mt. Fuji over Lake Kawaguchiko
 tags: mt fuji, lake kawaguchiko, japan, travel
-date: 2019-08-08 12:00
+date: 2019-08-08 12:00 -07:00
 ---
 
 ## Mt. Fuji and Lake Kawaguchiko, Japan

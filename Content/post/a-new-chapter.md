@@ -2,7 +2,7 @@
 image: /blog/a-new-chapter/boston-at-night.jpeg
 alt: Boston at night
 tags: boston, united states, ottawa, canada, tripadvisor, travel
-date: 2019-01-06 12:00
+date: 2019-01-06 12:00 -07:00
 ---
 
 ## A New Chapter

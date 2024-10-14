@@ -2,12 +2,12 @@
 image: /blog/hakone-and-lake-ashi-japan/shrine-gate.jpeg
 alt: Shrine gate
 tags: hakone, lake ashi, japan, travel
-date: 2019-08-11 12:00
+date: 2019-08-11 12:00 -07:00
 ---
 
 ## Hakone and Lake Ashi, Japan
 
-Totally rain-soaked, but still mildly pleased with myself, I left [Mt. Fuji and Lake Kawaguchiko](/post/mt-fuji-and-lake-kawaguchiko-japan) for Hakone. Hakone is a small, somewhat mountainous area about two hours from Fuji by bus, known for its many hot springs (or *onsen*). I got dropped off at Gora Station, which happens to be the place where both the train and the local cable car begin. Just like with Lake Kawaguchiko, it felt very picturesque, what with the abundance of nature and the quaint train tracks running alongside the road. 
+Totally rain-soaked, but still mildly pleased with myself, I left [Mt. Fuji and Lake Kawaguchiko](/post/mt-fuji-and-lake-kawaguchiko-japan) for Hakone. Hakone is a small, somewhat mountainous area about two hours from Fuji by bus, known for its many hot springs (or *onsen*). I got dropped off at Gora Station, which happens to be the place where both the train and the local cable car begin. Just like with Lake Kawaguchiko, it felt very picturesque, what with the abundance of nature and the quaint train tracks running alongside the road.
 
 ![Train tracks](/blog/hakone-and-lake-ashi-japan/train-tracks.jpeg)
 *The train tracks at Gora Station*

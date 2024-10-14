@@ -2,7 +2,7 @@
 image: /blog/osaka-japan/osaka.jpeg
 alt: Looking out over Osaka
 tags: osaka, japan, travel
-date: 2019-08-15 12:00
+date: 2019-08-15 12:00 -07:00
 ---
 
 ## Osaka, Japan

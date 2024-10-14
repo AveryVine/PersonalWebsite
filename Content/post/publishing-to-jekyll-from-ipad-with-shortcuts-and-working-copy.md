@@ -2,7 +2,7 @@
 image: /blog/publishing-to-jekyll-from-ipad-with-shortcuts-and-working-copy/blog-home-page.png
 alt: Blog home page
 tags: jekyll, tech, ipad, automation, shortcuts, working copy
-date: 2019-10-04 12:00
+date: 2019-10-04 12:00 -07:00
 ---
 
 ## Publishing to Jekyll From iPad with Shortcuts and Working Copy

@@ -1,6 +1,6 @@
 ---
 tags: tech
-date: 2024-10-13 16:47
+date: 2024-10-13 16:47 -07:00
 ---
 
 ## 🎤 Is This Thing On?

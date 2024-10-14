@@ -2,7 +2,7 @@
 image: /blog/vietnam-timeless-charm/hanoi.jpeg
 alt: Streets of Hanoi
 tags: vietnam, travel
-date: 2019-08-15 12:00
+date: 2019-08-15 12:00 -07:00
 ---
 
 ## Vietnam - Timeless Charm

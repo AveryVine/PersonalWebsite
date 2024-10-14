@@ -1,8 +1,8 @@
 ---
 image: /blog/ios-and-ipados-13-the-macstories-review-linked/ios-and-ipados-review.jpeg
-alt: Floating iPhones cover image 
+alt: Floating iPhones cover image
 tags: iphone, ipad, apple, tech
-date: 2019-09-30 12:00
+date: 2019-09-30 12:00 -07:00
 layout: Linked
 subtitle: https://www.macstories.net/stories/ios-and-ipados-13-the-macstories-review/
 ---

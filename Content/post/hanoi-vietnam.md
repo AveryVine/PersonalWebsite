@@ -2,7 +2,7 @@
 image: /blog/hanoi-vietnam/grains.jpeg
 alt: Woman selling assorted grains
 tags: hanoi, vietnam, travel
-date: 2019-08-17 12:00
+date: 2019-08-17 12:00 -07:00
 ---
 
 ## Hanoi, Vietnam

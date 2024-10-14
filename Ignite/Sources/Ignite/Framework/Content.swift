@@ -182,7 +182,7 @@ public struct Content {
             // If the date is now nil, their format was bad and
             // needs to be fixed.
             if metadata["date"] == nil {
-                fatalError("Content dates should be provided in the format 2024-05-24 15:30.")
+                fatalError("Content dates should be provided in the format 2024-05-24 15:30 -07:00.")
             }
         }
 
@@ -239,7 +239,7 @@ public struct Content {
     // a better `Date` instance.
     func process(date: String) -> Date? {
         let formatter = DateFormatter()
-        formatter.dateFormat = "y-MM-dd HH:mm"
+        formatter.dateFormat = "y-MM-dd HH:mm ZZZZ"
         formatter.timeZone = .gmt
         return formatter.date(from: date)
     }

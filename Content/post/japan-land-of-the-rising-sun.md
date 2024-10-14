@@ -2,7 +2,7 @@
 image: /blog/japan-land-of-the-rising-sun/japan.jpeg
 alt: Welcome to Japan!
 tags: japan, travel
-date: 2019-08-07 12:00
+date: 2019-08-07 12:00 -07:00
 ---
 
 ## Japan - Land of the Rising Sun
