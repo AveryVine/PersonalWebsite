@@ -16,11 +16,8 @@ struct Post: ContentPage {
                 .style(CustomFont(weight: .medium).style)
 
             Group {
-                Text {
-                    "Posted "
-                    content.byline
-                }
-                .margin(.top, -5)
+                Text(content.longByline(siteAuthorIfNecessary: context.site.author))
+                    .margin(.top, -5)
 
                 Text(content.duration)
                     .margin(.top, -15)

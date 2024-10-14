@@ -9,12 +9,12 @@ import Foundation
 import Ignite
 
 extension Content {
-    var byline: String {
-        "\(date.formatted(date: .long, time: .shortened)) by \(author ?? "Avery Vine")"
+    func longByline(siteAuthorIfNecessary: String) -> String {
+        "\(layoutType.bylineAction) \(date.formatted(date: .long, time: .shortened)) by \(author ?? siteAuthorIfNecessary)"
     }
 
     var shortByline: String {
-        "\(layoutType.bylineAction) \(date.formatted(.relative(presentation: .named)))"
+        "\(layoutType.bylineAction) \(date.formatted(date: .long, time: .omitted))"
     }
 
     var duration: String {

@@ -23,11 +23,8 @@ struct Linked: ContentPage {
         }
 
         Group {
-            Text {
-                "Linked "
-                content.byline
-            }
-            .margin(.top, -5)
+            Text(content.longByline(siteAuthorIfNecessary: context.site.author))
+                .margin(.top, -5)
         }
         .style(CustomFont(.workSans, size: .pixels(14)).style)
 
