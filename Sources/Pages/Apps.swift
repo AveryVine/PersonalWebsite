@@ -45,7 +45,7 @@ struct Apps: StaticPage {
                         }
 
                         if let webURL = project.links.webURL {
-                            BadgeLink("Web", path: webURL, systemImage: "browser-safari", external: !webURL.hasPrefix("/"))
+                            BadgeLink("Product Page", path: webURL, systemImage: "browser-safari", external: !webURL.hasPrefix("/"))
                         }
                     }
                     .font(.title5)

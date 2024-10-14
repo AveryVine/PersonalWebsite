@@ -14,6 +14,7 @@ extension ThemedPage {
             Badge(text, systemImage: systemImage)
                 .role(.primary)
                 .badgeStyle(.subtle)
+                .class("mb-1")
         }
         .target(external ? .blank : .default)
         .margin(.leading, includeLeadingMargin ? .small : .none)
