@@ -13,7 +13,7 @@ struct AllPosts: StaticPage {
     var theme = MainTheme(includeAuthorAttribution: false)
 
     func body(context: PublishingContext) -> [BlockElement] {
-        Text("Blog—All Posts")
+        Text("Blog")
             .font(.title1)
             .class("underlined")
             .margin(.bottom, .large)

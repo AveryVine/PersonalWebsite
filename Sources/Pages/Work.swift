@@ -13,7 +13,7 @@ struct Work: StaticPage {
     var theme = MainTheme(includeAuthorAttribution: false)
 
     func body(context: PublishingContext) -> [BlockElement] {
-        Text("Work Experience")
+        Text("Work")
             .font(.title1)
             .class("underlined")
             .margin(.bottom, .extraLarge)

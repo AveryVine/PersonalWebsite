@@ -27,6 +27,9 @@ public struct Dropdown: BlockElement, NavigationItem {
     /// The title for this `Dropdown`.
     var title: any InlineElement
 
+    /// Whether this dropdown is at the end of a navigation bar.
+    var isAtNavEnd: Bool
+
     /// The array of items to shown in this `Dropdown`.
     var items: [any DropdownElement]
 
@@ -44,12 +47,15 @@ public struct Dropdown: BlockElement, NavigationItem {
     /// that returns an array of types conforming to `DropdownElement`.
     /// - Parameters:
     ///   - title: The title to show on this dropdown button.
+    ///   - isAtNavEnd: Whether this dropdown is at the end of a navigation bar.
     ///   - items: The elements to place inside the dropdown menu.
     public init(
         _ title: any InlineElement,
+        isAtNavEnd: Bool = false,
         @ElementBuilder<any DropdownElement> items: () -> [any DropdownElement]
     ) {
         self.title = title
+        self.isAtNavEnd = isAtNavEnd
         self.items = items()
     }
 
@@ -80,6 +86,14 @@ public struct Dropdown: BlockElement, NavigationItem {
         var copy = self
         copy.isNavigationItem = true
         return copy
+    }
+
+    private var classes: [String] {
+        var classes = ["dropdown-menu"]
+        if isAtNavEnd {
+            classes.append("dropdown-menu-end")
+        }
+        return classes
     }
 
     /// Renders this element using publishing context passed in.
@@ -113,7 +127,7 @@ public struct Dropdown: BlockElement, NavigationItem {
                 }
             }
             .listStyle(.unordered(.default))
-            .class("dropdown-menu")
+            .class(classes)
         }
         .attributes(attributes)
         .class("dropdown")

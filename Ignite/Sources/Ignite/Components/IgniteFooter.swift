@@ -16,6 +16,7 @@ public struct IgniteFooter: Component {
         Text {
             "Created with "
             Link("Ignite", target: URL("https://github.com/twostraws/Ignite"))
+                .target(.blank)
         }
         .horizontalAlignment(.center)
         .margin(.top, .extraLarge)

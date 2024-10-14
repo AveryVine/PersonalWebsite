@@ -1,25 +1,27 @@
 //
-//  Projects.swift
+//  Apps.swift
+//  PersonalWebsite
 //
-//
-//  Created by Avery Vine on 25/3/24.
+//  Created by Avery Vine on 13/10/24.
 //
 
 import Foundation
 import Ignite
 
-struct Projects: StaticPage {
-    var title = "Projects"
+struct Apps: StaticPage {
+    var title = "Apps"
     var theme = MainTheme(includeAuthorAttribution: false)
 
+    let apps = Project.allProjects.filter { $0.isApp }
+
     func body(context: PublishingContext) -> [BlockElement] {
-        Text("Past Projects")
+        Text("Apps")
             .font(.title1)
             .class("underlined")
             .margin(.bottom, .extraLarge)
 
         Section {
-            for (index, project) in Project.allProjects.enumerated() {
+            for (index, project) in apps.enumerated() {
                 Group {}
                     .margin(.top, -80)
                     .id(project.id)
@@ -43,7 +45,7 @@ struct Projects: StaticPage {
                         }
 
                         if let webURL = project.links.webURL {
-                            BadgeLink("Web", path: webURL, systemImage: "browser-safari", external: true)
+                            BadgeLink("Web", path: webURL, systemImage: "browser-safari", external: !webURL.hasPrefix("/"))
                         }
                     }
                     .font(.title5)
@@ -58,7 +60,7 @@ struct Projects: StaticPage {
                         .margin(.bottom)
                 }
 
-                if index < Project.allProjects.count - 1 {
+                if index < apps.count - 1 {
                     Group {
                         Divider()
                     }

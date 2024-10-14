@@ -26,14 +26,16 @@ struct Project {
     let image: ImageAtPath?
     let description: String
     let links: Links
+    let isApp: Bool
 
-    private init(title: String, subtitle: String, image: ImageAtPath? = nil, description: String, links: Links) {
+    private init(title: String, subtitle: String, image: ImageAtPath? = nil, description: String, links: Links, isApp: Bool) {
         self.id = "\(title.convertedToSlug() ?? "")-\(subtitle.convertedToSlug() ?? "")"
         self.title = title
         self.subtitle = subtitle
         self.image = image
         self.description = description
         self.links = links
+        self.isApp = isApp
     }
 }
 
@@ -41,8 +43,8 @@ extension Project {
     // MARK: All Projects
     static let allProjects = [
         droplet,
-        sssc,
         cyclo,
+        sssc,
         wingIt,
         questsOfTheRoundTable
     ]
@@ -60,7 +62,8 @@ Droplet is a plant care app, helping you keep track of when you need to water or
 
 I began working on Droplet during WWDC 2019, as I was  looking for a project to try out some of the brand new APIs that were launching that year. I took a break when returning to university, but completed the project just before I began working at Apple.
 """,
-        links: Links(appStoreURL: "https://apps.apple.com/app/id1466106369", webURL: "/droplet")
+        links: Links(appStoreURL: "https://apps.apple.com/app/id1466106369", webURL: "/droplet"),
+        isApp: true
     )
 
     // MARK: SSSC iOS App
@@ -76,7 +79,8 @@ As a mentor at Carleton’s Science Student Success Centre (SSSC) and a member o
 
 There were two components: a Swift-based mobile front-end that displayed information to the user, and a Node.js server that provided an API that the app could use to retrieve event-related information.
 """,
-        links: Links(githubURL: "https://github.com/AveryVine/SSSC-iOS-App", appStoreURL: "https://apple.co/33RRbim")
+        links: Links(githubURL: "https://github.com/AveryVine/SSSC-iOS-App", appStoreURL: "https://apple.co/33RRbim"),
+        isApp: true
     )
 
     // MARK: Cyclo
@@ -92,7 +96,8 @@ Originally named Twister, I wrote this game as my application for Apple’s 2019
 
 I was fortunate enough to be selected by Apple as a winner, and was able to attend WWDC 2019 in San Jose, California! Over the course of five days I attended various workshops and networked with app developers from around the world. In the months following, I also took a bit of time to convert it into a full-fledged iOS app.
 """,
-        links: Links(githubURL: "https://github.com/AveryVine/Twister", appStoreURL: "https://apple.co/39rNLE6", webURL: "/cyclo")
+        links: Links(githubURL: "https://github.com/AveryVine/Twister", appStoreURL: "https://apple.co/39rNLE6", webURL: "/cyclo"),
+        isApp: true
     )
 
     // MARK: WingIt
@@ -108,7 +113,8 @@ As the final project in my Intelligent Web-based Information Systems course, we 
 
 We used a range of technologies and algorithms to complete this project including Jersey, MongoDB, crawler4j, Naive Bayes analysis, and more.
 """,
-        links: Links(githubURL: "https://github.com/lifeofcows/WingIt")
+        links: Links(githubURL: "https://github.com/lifeofcows/WingIt"),
+        isApp: false
     )
 
     // MARK: Quests of the Round table
@@ -124,6 +130,7 @@ This project was a collaboration between myself and three classmates for one of 
 
 I taught myself Unity and C# for the purpose of this project. In addition, as the class was focussed on the use of design patterns, I integrated several patterns including Mediator, Strategy, etc.
 """,
-        links: Links(githubURL: "https://github.com/JKirkYuan/Quest")
+        links: Links(githubURL: "https://github.com/JKirkYuan/Quest"),
+        isApp: false
     )
 }

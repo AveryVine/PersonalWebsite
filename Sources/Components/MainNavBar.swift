@@ -11,19 +11,14 @@ import Ignite
 struct MainNavBar: Component {
     func body(context: PublishingContext) -> [any PageElement] {
         NavigationBar(logo: Image("/images/logo.svg", description: "")) {
-            Link("Blog", target: "/all-posts")
-                .padding(.trailing, .medium)
             Link("Work", target: "/work")
                 .padding(.trailing, .medium)
+            Link("Apps", target: "/apps")
+                .padding(.trailing, .medium)
+            Link("Blog", target: "/all-posts")
+                .padding(.trailing, .medium)
 
-            Dropdown("My Stuff") {
-                Link("Droplet", target: "/droplet")
-                Link("Cyclo", target: "/cyclo")
-                Link("All Projects", target: "/projects")
-            }
-            .padding(.trailing, .medium)
-
-            Dropdown("Find Me Online") {
+            Dropdown("Connect", isAtNavEnd: true) {
                 Link(target: "https://mastodon.social/@averyvine") {
                     Image(systemName: "mastodon")
                     " Mastodon"
@@ -49,7 +44,7 @@ struct MainNavBar: Component {
         }
         .navigationBarStyle(.dark)
         .navigationItemAlignment(.trailing)
-        .backgroundColor(Color(hex: "#343a40"))
+        .backgroundColor(Color(hex: "#cc4a0e"))
         .position(.fixedTop)
     }
 }

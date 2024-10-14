@@ -29,7 +29,7 @@ struct PersonalWebsite: Site {
     var homePage = Home()
     var allPostsPage = AllPosts()
     var workPage = Work()
-    var projectsPage = Projects()
+    var appsPage = Apps()
     var cycloPage = Cyclo()
     var dropletPage = Droplet()
     var tagPage = Tags()
@@ -39,7 +39,7 @@ struct PersonalWebsite: Site {
         homePage
         allPostsPage
         workPage
-        projectsPage
+        appsPage
         dropletPage
         cycloPage
     }
