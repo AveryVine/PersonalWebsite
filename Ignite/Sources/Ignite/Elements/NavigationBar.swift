@@ -112,39 +112,41 @@ public struct NavigationBar: BlockElement {
                             .class("navbar-brand")
                     }
 
-                    Button {
-                        Span()
-                            .class("navbar-toggler-icon")
-                    }
-                    .class("navbar-toggler")
-                    .data("bs-toggle", "collapse")
-                    .data("bs-target", "#navbarCollapse")
-                    .aria("controls", "navbarCollapse")
-                    .aria("expanded", "false")
-                    .aria("label", "Toggle navigation")
+                    if !items.isEmpty {
+                        Button {
+                            Span()
+                                .class("navbar-toggler-icon")
+                        }
+                        .class("navbar-toggler")
+                        .data("bs-toggle", "collapse")
+                        .data("bs-target", "#navbarCollapse")
+                        .aria("controls", "navbarCollapse")
+                        .aria("expanded", "false")
+                        .aria("label", "Toggle navigation")
 
-                    Group {
-                        List {
-                            for item in items {
-                                if let dropdownItem = item as? Dropdown {
-                                    ListItem {
-                                        dropdownItem.configuredAsNavigationItem()
+                        Group {
+                            List {
+                                for item in items {
+                                    if let dropdownItem = item as? Dropdown {
+                                        ListItem {
+                                            dropdownItem.configuredAsNavigationItem()
+                                        }
+                                        .class("nav-item", "dropdown")
+                                        .data("bs-theme", "light")
+                                    } else {
+                                        ListItem {
+                                            item
+                                                .class("nav-link")
+                                        }
+                                        .class("nav-item")
                                     }
-                                    .class("nav-item", "dropdown")
-                                    .data("bs-theme", "light")
-                                } else {
-                                    ListItem {
-                                        item
-                                            .class("nav-link")
-                                    }
-                                    .class("nav-item")
                                 }
                             }
+                            .class("navbar-nav", "mb-2", "mb-md-0", "col", itemAlignment.rawValue)
                         }
-                        .class("navbar-nav", "mb-2", "mb-md-0", "col", itemAlignment.rawValue)
+                        .class("collapse", "navbar-collapse")
+                        .id("navbarCollapse")
                     }
-                    .class("collapse", "navbar-collapse")
-                    .id("navbarCollapse")
                 }
                 .class("container-fluid")
             }

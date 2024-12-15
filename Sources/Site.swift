@@ -31,6 +31,7 @@ struct PersonalWebsite: Site {
     var workPage = Work()
     var appsPage = Apps()
     var cycloPage = Cyclo()
+    var secretPage = Secret()
     var dropletPage = Droplet()
     var tagPage = Tags()
     var theme = MainTheme(includeAuthorAttribution: true)
@@ -42,6 +43,7 @@ struct PersonalWebsite: Site {
         appsPage
         dropletPage
         cycloPage
+        secretPage
     }
 
     var layouts: [any ContentPage] {

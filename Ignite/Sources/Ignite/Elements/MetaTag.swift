@@ -89,6 +89,18 @@ public struct MetaTag: HeadElement {
         self.charset = characterSet
     }
 
+    /// Creates a new `MetaTag` instance from the HTTP equivalent and content provided.
+    /// - Parameters:
+    ///   - name: The HTTP equivalent for the metadata.
+    ///   - content: The value for the metadata.
+    public init(httpEquivalent: String, content: String) {
+        self.type = "http-equiv"
+
+        self.name = httpEquivalent
+        self.content = content
+        self.charset = ""
+    }
+
     /// Returns a standard set of social sharing metadata for a given page,
     /// including the page title, description, and image.
     /// - Parameters:

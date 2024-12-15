@@ -32,7 +32,8 @@ public struct Head: HTMLRootElement {
     ///   information about the site being rendered and more.
     ///   - includeAuthorAttribution: Whether Fediverse author
     ///   attribution should be included on this page.
-    public init(for page: Page, in context: PublishingContext, includeAuthorAttribution: Bool) {
+    ///   - redirectPath: Whether this page should automatically redirect to a given path.
+    public init(for page: Page, in context: PublishingContext, includeAuthorAttribution: Bool = false, redirectTo redirectPath: String? = nil) {
         self.init {
             MetaTag.utf8
             MetaTag.flexibleViewport
@@ -47,6 +48,9 @@ public struct Head: HTMLRootElement {
 
             if includeAuthorAttribution {
                 MetaTag(name: "fediverse:creator", content: "@averyvine@mastodon.social")
+            }
+            if let redirectPath {
+                MetaTag(httpEquivalent: "Refresh", content: "0; url='\(redirectPath)'")
             }
 
             MetaTag.generator
