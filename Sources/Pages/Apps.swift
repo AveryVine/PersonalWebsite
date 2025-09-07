@@ -10,7 +10,7 @@ import Ignite
 
 struct Apps: StaticPage {
     var title = "Apps"
-    var theme = MainTheme(includeAuthorAttribution: false)
+    var theme = MainTheme(includeAuthorAttribution: false, includeIgniteCredit: false)
 
     let apps = Project.allProjects.filter { $0.isApp }
 

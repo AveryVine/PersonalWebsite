@@ -10,6 +10,7 @@ import Ignite
 
 struct MainTheme: Theme {
     let includeAuthorAttribution: Bool
+    let includeIgniteCredit: Bool
 
     func render(page: Page, context: PublishingContext) -> HTML {
         HTML {
@@ -20,12 +21,14 @@ struct MainTheme: Theme {
                     MainNavBar()
                     page.body
                         .margin(.bottom, .extraLarge)
-                    IgniteFooter()
+                    if includeIgniteCredit {
+                        IgniteFooter()
+                    }
                 }
                 .frame(maxWidth: 900)
                 .style("margin: auto")
             }
-            .margin(.top, .extraLarge)
+            .margin(.vertical, .extraLarge)
             .padding(.top, .extraLarge)
             .padding(.horizontal, .large)
         }

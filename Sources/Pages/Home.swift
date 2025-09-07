@@ -10,7 +10,7 @@ import Ignite
 
 struct Home: StaticPage {
     var title = "Home"
-    var theme = MainTheme(includeAuthorAttribution: false)
+    var theme = MainTheme(includeAuthorAttribution: false, includeIgniteCredit: true)
 
     func body(context: PublishingContext) -> [BlockElement] {
         Group {

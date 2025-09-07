@@ -34,7 +34,7 @@ struct PersonalWebsite: Site {
     var secretPage = Secret()
     var dropletPage = Droplet()
     var tagPage = Tags()
-    var theme = MainTheme(includeAuthorAttribution: true)
+    var theme = MainTheme(includeAuthorAttribution: true, includeIgniteCredit: false)
 
     var pages: [any StaticPage] {
         homePage

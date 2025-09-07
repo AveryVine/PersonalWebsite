@@ -10,7 +10,7 @@ import Ignite
 
 struct AllPosts: StaticPage {
     var title = "Blog"
-    var theme = MainTheme(includeAuthorAttribution: false)
+    var theme = MainTheme(includeAuthorAttribution: false, includeIgniteCredit: false)
 
     func body(context: PublishingContext) -> [BlockElement] {
         Text("Blog")

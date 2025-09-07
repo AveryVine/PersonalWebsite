@@ -47,6 +47,7 @@ struct Linked: ContentPage {
                 }
                 .linkStyle(.button)
                 .target(.blank)
+                .margin(.vertical, .small)
             }
         }
 

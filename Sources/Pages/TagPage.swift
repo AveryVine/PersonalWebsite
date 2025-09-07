@@ -9,7 +9,7 @@ import Foundation
 import Ignite
 
 struct Tags: TagPage {
-    var theme = MainTheme(includeAuthorAttribution: false)
+    var theme = MainTheme(includeAuthorAttribution: false, includeIgniteCredit: false)
 
     func body(tag: String?, context: PublishingContext) -> [any BlockElement] {
         if let tag {
