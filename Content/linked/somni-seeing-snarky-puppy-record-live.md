@@ -1,7 +1,7 @@
 ---
 image: /blog/somni-seeing-snarky-puppy-record-live/snarky-puppy.jpeg
 alt: A balcony perspective of the warehouse-style room in which the Somni album was recorded. People are interspersed with myriad musical instruments including keyboards, harps, cellos, and more. Colourful carpets are layered on every inch of the floor for soundproofing, and warm yellow bulbs provide light throughout the space.
-tags: music, travel, utrecht, amsterdam
+tags: music, travel, utrecht, netherlands
 date: 2025-09-07 14:30 -07:00
 layout: Linked
 subtitle: https://www.youtube.com/watch?v=f0GB_r-0J80
