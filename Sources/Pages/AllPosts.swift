@@ -21,7 +21,7 @@ struct AllPosts: StaticPage {
         Text {
             Link(target: "/feed.rss") {
                 Image(systemName: "rss-fill")
-                    .foregroundStyle(Color(hex: "#f26522"))
+                    .foregroundStyle("var(--site-rss)")
                     .margin(.trailing, 5)
                 "Feed"
             }

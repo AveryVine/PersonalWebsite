@@ -17,7 +17,7 @@ struct AppPageNavBar: Component {
                 .padding(.trailing, .medium)
         }
         .navigationBarStyle(.dark)
-        .backgroundColor(Color(hex: "#cc4a0e"))
+        .backgroundColor("var(--site-accent-strong)")
         .position(.fixedTop)
     }
 }

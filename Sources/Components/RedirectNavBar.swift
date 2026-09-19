@@ -13,7 +13,7 @@ struct RedirectNavBar: Component {
         NavigationBar(logo: Image("/images/logo.svg", description: "")) {}
             .navigationBarStyle(.dark)
             .navigationItemAlignment(.trailing)
-            .backgroundColor(Color(hex: "#cc4a0e"))
+            .backgroundColor("var(--site-accent-strong)")
             .position(.fixedTop)
     }
 }

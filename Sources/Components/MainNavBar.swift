@@ -52,7 +52,7 @@ struct MainNavBar: Component {
         }
         .navigationBarStyle(.dark)
         .navigationItemAlignment(.trailing)
-        .backgroundColor(Color(hex: "#cc4a0e"))
+        .backgroundColor("var(--site-accent-strong)")
         .position(.fixedTop)
     }
 }

@@ -38,6 +38,20 @@ public struct Head: HTMLRootElement {
             MetaTag.utf8
             MetaTag.flexibleViewport
 
+            // Bootstrap's dark mode is driven by the data-bs-theme attribute rather than a
+            // media query, so match it to the visitor's system appearance before the page
+            // paints, then keep it in sync if they change that preference while reading.
+            Script(code: """
+            (function() {
+                var query = window.matchMedia('(prefers-color-scheme: dark)');
+                function applyColorScheme() {
+                    document.documentElement.dataset.bsTheme = query.matches ? 'dark' : 'light';
+                }
+                applyColorScheme();
+                query.addEventListener('change', applyColorScheme);
+            })();
+            """)
+
             if page.description.isEmpty == false {
                 MetaTag(name: "description", content: page.description)
             }
