@@ -79,7 +79,7 @@ As a mentor at Carleton’s Science Student Success Centre (SSSC) and a member o
 
 There were two components: a Swift-based mobile front-end that displayed information to the user, and a Node.js server that provided an API that the app could use to retrieve event-related information.
 """,
-        links: Links(githubURL: "https://github.com/AveryVine/SSSC-iOS-App", appStoreURL: "https://apple.co/33RRbim"),
+        links: Links(githubURL: "https://github.com/AveryVine/SSSC-iOS-App"),
         isApp: true
     )
 

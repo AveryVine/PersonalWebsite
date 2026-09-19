@@ -69,7 +69,7 @@ public struct Text: BlockElement, DropdownElement {
     /// - Parameter context: The current publishing context.
     /// - Returns: The HTML for this element.
     public func render(context: PublishingContext) -> String {
-        var textAttributes = attributes.appending(classes: [display.className])
+        let textAttributes = attributes.appending(classes: [display.className])
         return "<\(font.rawValue)\(textAttributes.description)>" + content.render(context: context) + "</\(font.rawValue)>"
     }
 }

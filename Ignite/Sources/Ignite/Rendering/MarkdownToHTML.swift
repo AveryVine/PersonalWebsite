@@ -200,8 +200,18 @@ public struct MarkdownToHTML: MarkupVisitor {
     /// Processes hyperlink markup.
     /// - Parameter link: The link markup to process.
     /// - Returns: Returns a HTML <a> tag with the correct location and content.
+    /// If the link's title is set to `_blank` (e.g. `[text](url "_blank")`), the
+    /// link opens in a new tab via `target="_blank" rel="noopener noreferrer"`.
     mutating public func visitLink(_ link: Markdown.Link) -> String {
-        var result = #"<a href="\#(link.destination ?? "#")">"#
+        var attributes = #"href="\#(link.destination ?? "#")""#
+
+        if link.title == "_blank" {
+            attributes += #" target="_blank" rel="noopener noreferrer""#
+        } else if let title = link.title {
+            attributes += #" title="\#(title)""#
+        }
+
+        var result = "<a \(attributes)>"
 
         for child in link.children {
             result += visit(child)

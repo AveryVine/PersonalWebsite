@@ -13,8 +13,10 @@ struct MainNavBar: Component {
         NavigationBar(logo: Image("/images/logo.svg", description: "")) {
             Link("Work", target: "/work")
                 .padding(.trailing, .medium)
+
             Link("Apps", target: "/apps")
                 .padding(.trailing, .medium)
+
             Link("Blog", target: "/all-posts")
                 .padding(.trailing, .medium)
 
@@ -25,20 +27,26 @@ struct MainNavBar: Component {
                 }
                 .relationship(.me)
                 .target(.blank)
-                Link(target: "https://github.com/AveryVine") {
-                    Image(systemName: "github")
-                    " Github"
+
+                Link(target: "https://bsky.app/profile/averyvine.com") {
+                    Image(systemName: "bluesky")
+                    " Bluesky"
                 }
+                .relationship(.me)
                 .target(.blank)
+
                 Link(target: "https://linkedin.com/in/averyvine") {
                     Image(systemName: "linkedin")
                     " LinkedIn"
                 }
+                .relationship(.me)
                 .target(.blank)
-                Link(target: "mailto:averyvine@icloud.com") {
-                    Image(systemName: "envelope-fill")
-                    " E-mail"
+
+                Link(target: "https://github.com/AveryVine") {
+                    Image(systemName: "github")
+                    " Github"
                 }
+                .relationship(.me)
                 .target(.blank)
             }
         }

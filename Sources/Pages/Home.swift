@@ -18,7 +18,7 @@ struct Home: StaticPage {
                 Group {
                     Image("images/AveryVine.jpeg", description: "Me, wearing a puffy winter jacket and a scarf")
                         .resizable()
-                        .cornerRadius("2%")
+                        .cornerRadius("8%")
                         .backgroundColor(.whiteSmoke)
                         .frame(maxWidth: 250)
                         .style("width: 100%")
@@ -34,7 +34,7 @@ struct Home: StaticPage {
                 Group {
                     Text("Hi, I’m Avery!")
                         .font(.title1)
-                    Text("Software engineer at Apple, avid pianist, and proud cat owner.")
+                    Text("Localization Software Engineer at Apple, avid pianist, cat enjoyer.")
                         .font(.lead)
                         .margin(.top, .small)
                     Text("Ottawa 🇨🇦 → San Francisco 🇺🇸")
@@ -67,27 +67,61 @@ struct Home: StaticPage {
         .horizontalAlignment(.center)
 
         Group {
-            Text("About Me")
-                .font(.title3)
-            Text("I’m a Localization Software Engineer at Apple, helping to make the software you use every day work seamlessly in over 40 languages. When I’m not programming, I love playing piano and video games—they often compete for my attention! General tech enthusiast, enjoyer of cats, and extremely infrequent blogger.")
-            Text {
+
+            Group {
                 BadgeLink("Work: Apple", path: "/work#apple-localization-software-engineer", systemImage: "person-badge-fill")
                 BadgeLink("App: Droplet", path: "/droplet", systemImage: "phone-fill")
                 BadgeLink("Social: averyvine", path: "https://mastodon.social/@averyvine", systemImage: "mastodon", external: true)
             }
+            .margin(.bottom, .medium)
+
+            Text("About Me")
+                .font(.title3)
+
+            Text("I help make the software you use every day work beautifully for people all around the world.")
+
+            Text("Some favourites I've worked on:")
+                .margin(.bottom, .extraSmall)
+            List {
+                ListItem {
+                    "Xcode feature to "
+                    Link(
+                        "translate apps using agents",
+                        target: "https://developer.apple.com/videos/play/wwdc2026/213"
+                    )
+                    .target(.blank)
+                }
+                ListItem {
+                    "Localization of apps & system UI for "
+                    Link(
+                        "iPhone Duo",
+                        target: "https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/"
+                    )
+
+                }
+                ListItem {
+                    "Localization of apps & system UI for "
+                    Link(
+                        "the new design & Liquid Glass",
+                        target: "https://www.apple.com/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/"
+                    )
+                    .target(.blank)
+                }
+            }
         }
-        .margin(.top, .extraLarge)
+        .margin(.top, .large)
 
         Group {
             Divider()
                 .class("underlined")
         }
-        .margin(.top, .medium)
 
-        BlogPostList(
-            allContent: Array(context.allContent.sorted(by: \.date, order: .reverse).prefix(3)),
-            includeAllPostsButton: true
-        )
-        .margin(.top, .large)
+        Group {
+            BlogPostList(
+                allContent: Array(context.allContent.sorted(by: \.date, order: .reverse).prefix(3)),
+                includeAllPostsButton: true
+            )
+        }
+        .margin(.top, .extraLarge)
     }
 }
