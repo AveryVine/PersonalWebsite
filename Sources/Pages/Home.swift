@@ -34,7 +34,7 @@ struct Home: StaticPage {
                 Group {
                     Text("Hi, I’m Avery!")
                         .font(.title1)
-                    Text("Localization Software Engineer at Apple, avid pianist, cat enjoyer.")
+                    Text("Software Engineer at Apple, hobbiest pianist, cat enjoyer.")
                         .font(.lead)
                         .margin(.top, .small)
                     Text("Ottawa 🇨🇦 → San Francisco 🇺🇸")

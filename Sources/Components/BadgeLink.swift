@@ -11,7 +11,7 @@ import Ignite
 extension ThemedPage {
     func BadgeLink(_ text: String, path: String, systemImage: String? = nil, external: Bool = false, includeLeadingMargin: Bool = false, includeTrailingMargin: Bool = true) -> InlineElement {
         Link(target: path) {
-            Badge(text, systemImage: systemImage)
+            Badge(badgeText(text), systemImage: systemImage)
                 .role(.primary)
                 .badgeStyle(.subtle)
                 .class("mb-1")
@@ -19,5 +19,14 @@ extension ThemedPage {
         .target(external ? .blank : .default)
         .margin(.leading, includeLeadingMargin ? .small : .none)
         .margin(.trailing, includeTrailingMargin ? .small : .none)
+    }
+
+    private func badgeText(_ text: String) -> any InlineElement {
+        guard let colon = text.range(of: ": ") else { return text }
+        return Span {
+            String(text[text.startIndex ..< colon.lowerBound])
+            Span(String(text[colon.lowerBound...]))
+                .class("badge-detail")
+        }
     }
 }

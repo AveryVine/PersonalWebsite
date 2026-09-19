@@ -40,7 +40,7 @@ If you have any questions about this Privacy Policy, please contact me:
 
     // MARK: Droplet
     static let droplet = PrivacyPolicy(
-        effectiveDate: DateComponents(calendar: .current, year: 2024, month: 10, day: 13).date!,
+        effectiveDate: DateComponents(calendar: .current, year: 2026, month: 09, day: 19).date!,
         policyText: """
 **Policy**
 
@@ -59,7 +59,7 @@ I may update this Privacy Policy from time to time. I will notify you of any cha
 **Contact Me**
 
 If you have any questions about this Privacy Policy, please contact me:
-- By email: [averyvine@icloud.com](mailto:averyvine@icloud.com)
+- By email: [getdroplet@icloud.com](mailto:getdroplet@icloud.com)
 """
     )
 }

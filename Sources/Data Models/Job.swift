@@ -48,7 +48,7 @@ extension Job {
 At Apple, I've spent years working on anything & everything to do with software localization, from high-visibility customer-facing software to internal localization tools & processes. I work cross-functionally with software engineering teams across the company, international software QA centres, language experts, and project managers to ensure that Apple delivers world-class software products to our international markets. In short, I help make sure Apple software products work beautifully for millions of users all over the world, in well over 50 languages!
 
 Some favourites I've worked on:
-- Xcode feature to [translate apps using coding agents](https://developer.apple.com/videos/play/wwdc2026/213  "_blank")
+- Xcode feature to [translate apps using agents](https://developer.apple.com/videos/play/wwdc2026/213  "_blank")
 - Localization of apps & system UI for [iPhone Duo](https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/  "_blank")
 - Localization of apps & system UI for [the new design & Liquid Glass](https://www.apple.com/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/ "_blank")
 """
