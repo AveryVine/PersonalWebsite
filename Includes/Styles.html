@@ -9,8 +9,10 @@
         src: url(/fonts/NunitoSans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf);
     }
 
-    :root,
-    [data-bs-theme="light"] {
+    /* Anchored to :root rather than a bare [data-bs-theme] selector. Ignite stamps
+       data-bs-theme onto the navbar and its dropdown to pin their internal Bootstrap
+       styling, and a bare selector would let those subtrees re-pick the wrong palette. */
+    :root {
         --site-bg: #F5F5F5;
         --site-rule: black;
 
@@ -24,7 +26,7 @@
         --site-rss: #f26522;
     }
 
-    [data-bs-theme="dark"] {
+    :root[data-bs-theme="dark"] {
         --site-bg: #262626;
         --site-rule: #ffffff;
 

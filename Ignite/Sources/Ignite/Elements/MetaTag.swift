@@ -123,8 +123,8 @@ public struct MetaTag: HeadElement {
         MetaTag(property: "twitter:title", content: page.title)
 
         if page.description.isEmpty == false {
-            MetaTag(property: "og:description", content: page.title)
-            MetaTag(name: "twitter:description", content: page.title)
+            MetaTag(property: "og:description", content: page.description)
+            MetaTag(name: "twitter:description", content: page.description)
         }
 
         MetaTag(property: "og:url", content: page.url)
